@@ -93,7 +93,7 @@ public:
 
     friend CTextT operator+(const CTextT& string1, const CTextT& string2)    { return Add(string1, string2); }
     friend CTextT operator+(const CTextT& string, const T* str)              { return Add(string, str); }
-    friend CTextT operator+(const T* str, const CTextT& string)              { return Add(string, str); }
+    friend CTextT operator+(const T* str, const CTextT& string)              { return Add(str, string); }
     friend CTextT operator+(const CTextT& string, T ch)                      { return Add(string, ch); }
     friend CTextT operator+(T ch, const CTextT& string)                      { return Add(ch,string); }
 
